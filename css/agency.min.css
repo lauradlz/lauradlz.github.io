@@ -226,7 +226,9 @@ header.masthead .intro-text .intro-heading{
 
 .timeline>li .timeline-panel:after{right:auto;left:-14px;border-right-width:14px;border-left-width:0}
 
-.timeline>li .timeline-image{position:absolute;z-index:100;left:0;width:80px;height:80px;margin-left:0;text-align:center;color:#fff;border:7px solid #e9ecef;border-radius:100%;background-color:#E53935}
+.timeline>li .timeline-image{position:absolute;z-index:100;left:0;width:80px;height:80px;margin-left:0;text-align:center;color:#fff;border:7px solid #e9ecef;border-radius:100%;}
+
+.timeline>li .timeline-end{background-color:#E53935}
 
 .timeline>li .timeline-image h4{font-size:10px;line-height:14px;margin-top:12px}
 
