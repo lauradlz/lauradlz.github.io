@@ -200,7 +200,7 @@ header.masthead .intro-text .intro-heading{
 
 .portfolio-modal .modal-content ul.list-inline span {font-family: 'Roboto Slab','Helvetica Neue',Helvetica,Arial,sans-serif;font-size: 1rem;font-weight: 400;line-height: 1.5;color: #212529;}
 
-.portfolio-modal .modal-content img{margin-bottom:30px;}
+.portfolio-modal .modal-content img{margin-bottom:30px; max-width: 360px;}
 
 .portfolio-modal .modal-content button{cursor:pointer}
 
