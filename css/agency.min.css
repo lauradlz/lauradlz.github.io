@@ -53,7 +53,7 @@ img::-moz-selection{background:0 0}
 
 #mainNav .navbar-brand{
 	color:#E53935;
-	font-family:'Kaushan Script','Helvetica Neue',Helvetica,Arial,cursive
+	font-family:Montserrat,'Helvetica Neue',Helvetica,Arial,cursive
 }
 
 #mainNav .navbar-brand.active,#mainNav .navbar-brand:active,#mainNav .navbar-brand:focus,#mainNav .navbar-brand:hover{color:#fec503}
@@ -80,7 +80,6 @@ img::-moz-selection{background:0 0}
 	}
 
 	#mainNav .navbar-brand{
-		font-size:1.75em;
 		-webkit-transition:all .3s;
 		-moz-transition:all .3s;
 		transition:all .3s
@@ -105,7 +104,7 @@ img::-moz-selection{background:0 0}
 header.masthead{
 	text-align:center;
 	color:#fff;
-	background-image:url(../img/header-bg.jpg);
+	background-image:url(../img/header-bg.jpeg);
 	background-repeat:no-repeat;
 	background-attachment:scroll;
 	background-position:center center;
