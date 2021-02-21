@@ -622,8 +622,35 @@
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
                   <h2 class="text-uppercase">Groovy Bee</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                  <p class="item-intro text-muted">An interesting attempt to generate classical music using Long Short Term Memory recurrent neural networks</p>
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/groovybee.png" alt="">
+                  <p>
+                    As part of our common Deep learning class team project, a friend and I found exciting to try and generate music using neural network. Indeed, musical activities heavily
+                    rely on human memory mechanisms that Artificial Neural Networks were conceived to and are now relatively able to mimic. As such, we decided to explore the possibility of
+                    using raw audio samples, digitized as Midi files, to train a Long Short Term Memory recurrent neural network (LSTM).
+                  </p>
+                  <p>
+                    LSTMs are the popular choice for handling timeseries datasets. They are de facto well suited for audio files. Previous work in the field includes variety of
+                    music data, including musical notes represented as both sequence of characters and numerical vectors. Although, they seldom address the polymorphic aspect of
+                    classical music. Therefore, we adopted various methodologies to process the raw audio dataset into suitable format for the LSTM network training, and implementation
+                    of a custom architecture for the end-to-end LSTM network using the library PyTorch.
+                  </p>
+                  <p>
+                    As a dataset, we extracted instrument level data from a MIDI track. The data was sanitized, the silence periods removed. The end goal was to ultimately discover the
+                    effectiveness of learning an univariate distribution. We trained a first two-layer network then a second improved version. Eventually, the generated succession of notes
+                    are compared with the pattern of musical notes in existing Midi files, to understand the effectiveness of the output of the network.
+                  </p>
+                  <p>
+                    The modified LSTM implementation led to improvement in predictions. However, when the output was transformed back into MIDI files, the audio was more coherent in terms
+                    of stability but did not exhibit structural integrity expected from a musical composition. Without incorporating silence periods, the output sounds becomes disorganized.
+                    Moreover, MIDI files contain events like SetTempo, which dictate the value of BPM of beats per minute, for a particular musical note (pitch), at a time interval. These events
+                    were not included in the data set where all instruments were separated, and therefore reduce the likelihood of retaining structural integrity.
+                  </p>
+                  <p>
+                    Our experiemnt clearly showed that using digitized audio samples did not offer much improvements over transcribed audio data containing musical characters. Nevertheless in theory,
+                    cascading of neural networks that individually learn and track changes in tempo, notes from various instruments, and silence periods would lead to better results in terms of
+                    musical integrity and composition.
+                  </p>
                   <div class="row">
                     <div class="col-md-12">
                       <ul class="list-inline">
